@@ -66,20 +66,40 @@
 
         /* Contact */
         .contact {
-            text-align: center;
-            margin-top: 30px;
-        }
-        .contact a {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .contact a:hover {
-            background: #0056b3;
-        }
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    min-width: 120px; /* Ensures uniform button width */
+}
+
+.contact-btn {
+    background: #007BFF;
+    color: white;
+}
+
+.contact-btn:hover {
+    background: #0056b3;
+}
+
+.resume-btn {
+    background: #28a745;
+    color: white;
+}
+
+.resume-btn:hover {
+    background: #218838;
+}
+
 
     </style>
 </head>
