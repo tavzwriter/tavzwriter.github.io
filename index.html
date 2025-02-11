@@ -11,10 +11,39 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background: #007BFF;
+            color: white;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+        }
+        .sidebar h2 {
+            font-size: 22px;
+        }
+        .sidebar ul {
+            padding: 0;
+            list-style-type: none;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .sidebar ul li a:hover {
+            color: #ffe600;
         }
         .container {
+            margin-left: 270px; /* Add space for the sidebar */
             width: 80%;
-            margin: auto;
             padding: 20px;
             text-align: center;
         }
@@ -66,20 +95,30 @@
             text-align: center;
         }
         .portfolio-item img {
-            width: 100%;
+            width: 80%; /* Reduce image size */
+            max-width: 200px; /* Set a max width for the images */
             border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <header>
-        Tavleena Marwah | Technical Writer & Ex-Content Manager
-    </header>
-    
+    <div class="sidebar">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
     <div class="container">
+        <header>
+            Tavleena Marwah | Technical Writer & Ex-Content Manager
+        </header>
+
         <img src="profile.jpeg" alt="Tavleena Marwah" class="profile-pic">
-        
-        <div class="section">
+
+        <div class="section" id="about">
             <h2>About Me</h2>
             <p>I am a Technical Writer and Content Manager with over 15 years of experience in crafting clear, user-centric documentation.
       My expertise includes developing user manuals, installation guides, release notes, troubleshooting documents, and online help systems that enhance user experience and product adoption.
@@ -87,13 +126,11 @@
       I specialize in AsciiDoc, GitHub, JIRA, and DITA, ensuring high-quality, structured documentation.
       I have successfully migrated legacy content, optimized workflows with automation, and improved content accessibility through well-structured documentation portals.
 
-My passion lies in transforming complex technical information into clear, engaging, and actionable content, making technology more accessible for users at all levels.
-
-    </p>
+      My passion lies in transforming complex technical information into clear, engaging, and actionable content, making technology more accessible for users at all levels.</p>
             <a href="Tavleena_Marwah.pdf" class="btn" download>Download Resume</a>
         </div>
-        
-        <div class="section">
+
+        <div class="section" id="portfolio">
             <h2>Portfolio</h2>
             <div class="portfolio">
                 <div class="portfolio-item">
@@ -112,16 +149,14 @@ My passion lies in transforming complex technical information into clear, engagi
                     <img src="convert_icon.jpeg" alt="How to convert documentation from DITA to AsciiDoc">
                     <p><a href="Converting_Documentation_from_DITA_to_AsciiDoc.html">How to convert documentation from DITA to AsciiDoc</a></p>
                 </div>
-                                <div class="portfolio-item">
+                <div class="portfolio-item">
                     <img src="icon.png" alt="API Documentation">
                     <p><a href="#">API Documentation for XYZ calls</a></p>
                 </div>
             </div>
         </div>
-        
-        
-        
-        <div class="section">
+
+        <div class="section" id="contact">
             <h2>Contact</h2>
             <a href="mailto:tavz.writer@gmail.com" class="btn">Email Me</a>
             <a href="https://www.linkedin.com/in/tavleena-marwah-5603592/" class="btn">LinkedIn</a>
