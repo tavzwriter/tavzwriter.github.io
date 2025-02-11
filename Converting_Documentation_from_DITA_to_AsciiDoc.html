@@ -27,18 +27,23 @@
         
         <section id="introduction">
             <h2>Introduction</h2>
-            <p>Converting documentation from DITA to AsciiDoc can simplify workflows and improve content accessibility.</p>
+            <p>DITA (Darwin Information Typing Architecture) is widely used for structured technical documentation. However, AsciiDoc is gaining popularity due to its lightweight syntax, simplicity, and compatibility with modern documentation workflows.</p>
+            <p>Many organizations seek to migrate from DITA to AsciiDoc to reduce complexity and improve content management efficiency.</p>
         </section>
-
-        <figure>
-            <img src="dita-to-asciidoc-diagram.png" alt="DITA to AsciiDoc Conversion Diagram" class="img-fluid">
-            <figcaption>Figure 1: The conversion process from DITA to AsciiDoc.</figcaption>
-        </figure>
 
         <section id="process">
             <h2>Conversion Process</h2>
-            <p>The table below compares key differences between DITA and AsciiDoc.</p>
+            <p>Converting documentation from DITA to AsciiDoc involves several steps:</p>
 
+            <ol>
+                <li><strong>Extracting DITA Content:</strong> Gather DITA topics and maps from the source repository.</li>
+                <li><strong>Converting XML to Markdown:</strong> Use tools like Pandoc or custom scripts to transform XML-based DITA content into Markdown.</li>
+                <li><strong>Refining Markdown:</strong> Ensure proper formatting, remove unnecessary metadata, and adjust styles.</li>
+                <li><strong>Transforming to AsciiDoc:</strong> Convert Markdown content to AsciiDoc format while preserving structure.</li>
+                <li><strong>Review and Publish:</strong> Validate the converted documents, check for consistency, and integrate them into the documentation system.</li>
+            </ol>
+
+            <h3>Comparison Table</h3>
             <table class="table table-bordered table-striped">
                 <thead>
                     <tr>
@@ -50,13 +55,13 @@
                 <tbody>
                     <tr>
                         <td>DITA</td>
-                        <td>Modular, Reusable Content</td>
-                        <td>Complex, Requires Special Tools</td>
+                        <td>Modular, structured content with XML-based reuse.</td>
+                        <td>Requires specialized tools and a steep learning curve.</td>
                     </tr>
                     <tr>
                         <td>AsciiDoc</td>
-                        <td>Lightweight, Easy to Use</td>
-                        <td>Less Standardized</td>
+                        <td>Lightweight syntax, easy to read, integrates well with Git-based workflows.</td>
+                        <td>Less robust support for modular reuse compared to DITA.</td>
                     </tr>
                 </tbody>
             </table>
@@ -64,16 +69,15 @@
         
         <details>
             <summary><strong>Why Convert from DITA to AsciiDoc?</strong></summary>
-            <p>AsciiDoc is simpler, requires fewer tools, and integrates well with modern CI/CD workflows.</p>
+            <p>AsciiDoc provides a simpler, more accessible approach to technical documentation, reducing dependencies on complex DITA toolchains.</p>
         </details>
         
         <div class="alert alert-warning mt-4" role="alert">
-            ⚠️ <strong>Warning:</strong> Ensure all DITA topics are well-structured before conversion to prevent content loss.
-        </div>
+            ⚠️ <strong>Warning:</strong> Before conversion, ensure all DITA topics are well-structured to prevent content loss.</div>
         
         <section id="conclusion">
             <h2>Conclusion</h2>
-            <p>By switching to AsciiDoc, teams can streamline their documentation processes while maintaining clarity and flexibility.</p>
+            <p>By migrating from DITA to AsciiDoc, organizations can streamline documentation workflows while maintaining high-quality content. AsciiDoc’s lightweight nature makes it an excellent choice for modern technical writing teams.</p>
         </section>
     </div>
 </body>
