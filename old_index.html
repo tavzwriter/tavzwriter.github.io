@@ -3,138 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tavleena M - Portfolio</title>
+    <title>Tavleena Marwah | Technical Writer Portfolio</title>
     <style>
-        .contact {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.contact a {
-    display: inline-block;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    text-align: center;
-    min-width: 120px;
-    color: white;
-}
-
-/* Button Colors */
-.contact-btn {
-    background: #007BFF;
-}
-
-.contact-btn:hover {
-    background: #0056b3;
-}
-
-.resume-btn {
-    background: #28a745;
-}
-
-.resume-btn:hover {
-    background: #218838;
-}
-
-.linkedin-btn {
-    background: #0A66C2;
-}
-
-.linkedin-btn:hover {
-    background: #004182;
-}
-
-
-        /* Contact */
-        .contact {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.contact a {
-    display: inline-block;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    text-align: center;
-    min-width: 120px; /* Ensures uniform button width */
-}
-
-.contact-btn {
-    background: #007BFF;
-    color: white;
-}
-
-.contact-btn:hover {
-    background: #0056b3;
-}
-
-.resume-btn {
-    background: #28a745;
-    color: white;
-}
-
-.resume-btn:hover {
-    background: #218838;
-}
-
-
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 40px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            color: white;
+            background: #007BFF;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .portfolio-item {
+            background: #eef;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .portfolio-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
-
-<!-- Navigation -->
-<nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Portfolio</a>
-    <a href="#">Contact</a>
-</nav>
-
-<!-- Main Content -->
-<div class="container">
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I'm <strong>Tavleena</strong>, a Technical writer, Ex-Content Manager, Ex-Senior Technical Writer.</p>
-
-    <h2>About Me</h2>
-    <p>I am a Technical Writer and Content Manager with over 15 years of experience in crafting clear, user-centric documentation.
+    <header>
+        Tavleena Marwah | Technical Writer & Ex-Content Manager
+    </header>
+    
+    <div class="container">
+        <img src="profile.jpeg" alt="Tavleena Marwah" class="profile-pic">
+        
+        <div class="section">
+            <h2>About Me</h2>
+            <p>I am a Technical Writer and Content Manager with over 15 years of experience in crafting clear, user-centric documentation.
       My expertise includes developing user manuals, installation guides, release notes, troubleshooting documents, and online help systems that enhance user experience and product adoption.
 
       I specialize in AsciiDoc, GitHub, JIRA, and DITA, ensuring high-quality, structured documentation.
       I have successfully migrated legacy content, optimized workflows with automation, and improved content accessibility through well-structured documentation portals.
 
 My passion lies in transforming complex technical information into clear, engaging, and actionable content, making technology more accessible for users at all levels.
-</p>
 
-    <h2>Portfolio</h2>
-    <div class="portfolio">
-        <div class="portfolio-item">
-            <a href="#">Sample Article 1</a>
+    </p>
+            <a href="Tavleena_Marwah.pdf" class="btn" download>Download Resume</a>
         </div>
-        <div class="portfolio-item">
-            <a href="#">Technical Guide 2</a>
+        
+        <div class="section">
+            <h2>Portfolio</h2>
+            <div class="portfolio">
+                <div class="portfolio-item">
+                    <img src="preferences-releasenotes.svg" alt="Release Notes">
+                    <p><a href="Bridging_the_Knowledge_Gap.html">Bridging the Knowledge Gap: The Role of Technical Writing</a></p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="preferences-releasenotes.svg" alt="Release Notes">
+                    <p><a href="TMexample_Release_notes.html">Sample Release Notes</a></p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="icon.png" alt="User Guide">
+                    <p><a href="#">How to add equations in MS-Word and reuse latex</a></p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="convert_icon.jpeg" alt="How to convert documentation from DITA to AsciiDoc">
+                    <p><a href="Converting_Documentation_from_DITA_to_AsciiDoc.html">How to convert documentation from DITA to AsciiDoc</a></p>
+                </div>
+                                <div class="portfolio-item">
+                    <img src="icon.png" alt="API Documentation">
+                    <p><a href="#">API Documentation for XYZ calls</a></p>
+                </div>
+            </div>
         </div>
-        <div class="portfolio-item">
-            <a href="#">Content Strategy Example</a>
+        
+        
+        
+        <div class="section">
+            <h2>Contact</h2>
+            <a href="mailto:tavz.writer@gmail.com" class="btn">Email Me</a>
+            <a href="https://www.linkedin.com/in/tavleena-marwah-5603592/" class="btn">LinkedIn</a>
+            <a href="https://github.com/tavzwriter" class="btn">GitHub</a>
         </div>
     </div>
-    <h2>Contact</h2>
-    <div class="contact">
-    <a href="tavz.writer@gmail.com" class="contact-btn">Email Me</a>
-    <a href="Tavleena_Marwah.pdf" class="resume-btn" download>My Resume</a>
-    <a href="https://www.linkedin.com/in/tavleena-marwah-5603592/" class="linkedin-btn" target="_blank">LinkedIn</a>
-</div>
-
-    
-
-</div>
-
 </body>
 </html>
