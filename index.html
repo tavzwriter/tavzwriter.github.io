@@ -49,6 +49,14 @@
             font-size: 24px;
             font-weight: bold;
         }
+        .sticky-header {
+            background-color: #000;
+            color: white;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
         .profile-pic {
             width: 150px;
             height: 150px;
@@ -94,6 +102,23 @@
             max-width: 200px; /* Set a max width for the images */
             border-radius: 5px;
         }
+        .mini-toc {
+            background: #343a40;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .mini-toc a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 8px;
+        }
+        .mini-toc a:hover {
+            background-color: #495057;
+        }
     </style>
 </head>
 <body>
@@ -111,7 +136,7 @@
 
         <img src="profile.jpeg" alt="Tavleena Marwah" class="profile-pic">
 
-        <div class="section" id="about">
+        <div class="section sticky-header">
             <h2>About Me</h2>
             <p>I am a Technical Writer and Content Manager with over 15 years of experience in crafting clear, user-centric documentation.
       My expertise includes developing user manuals, installation guides, release notes, troubleshooting documents, and online help systems that enhance user experience and product adoption.
@@ -125,26 +150,27 @@
 
         <div class="section" id="portfolio">
             <h2>Portfolio</h2>
+            
+            <!-- Mini TOC under Portfolio -->
+            <div class="mini-toc">
+                <h4>Portfolio Contents</h4>
+                <a href="#release-notes">Release Notes</a>
+                <a href="#user-guide">User Guide</a>
+                <a href="#conversion">Conversion Documentation</a>
+            </div>
+
             <div class="portfolio">
-                <div class="portfolio-item">
+                <div class="portfolio-item" id="release-notes">
                     <img src="preferences-releasenotes.svg" alt="Release Notes">
                     <p><a href="Bridging_the_Knowledge_Gap.html">Bridging the Knowledge Gap: The Role of Technical Writing</a></p>
                 </div>
-                <div class="portfolio-item">
+                <div class="portfolio-item" id="user-guide">
                     <img src="preferences-releasenotes.svg" alt="Release Notes">
                     <p><a href="TMexample_Release_notes.html">Sample Release Notes</a></p>
                 </div>
-                <div class="portfolio-item">
-                    <img src="icon.png" alt="User Guide">
-                    <p><a href="#">How to add equations in MS-Word and reuse latex</a></p>
-                </div>
-                <div class="portfolio-item">
+                <div class="portfolio-item" id="conversion">
                     <img src="convert_icon.jpeg" alt="How to convert documentation from DITA to AsciiDoc">
                     <p><a href="Converting_Documentation_from_DITA_to_AsciiDoc.html">How to convert documentation from DITA to AsciiDoc</a></p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="icon.png" alt="API Documentation">
-                    <p><a href="#">API Documentation for XYZ calls</a></p>
                 </div>
             </div>
         </div>
