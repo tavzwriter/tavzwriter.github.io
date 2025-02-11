@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tavleena Marwah | Technical Writer Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 40px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            color: white;
+            background: #007BFF;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .portfolio-item {
+            background: #eef;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .portfolio-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Tavleena Marwah | Technical Writer & Content Manager
+    </header>
+    
+    <div class="container">
+        <img src="profile.jpg" alt="Tavleena Marwah" class="profile-pic">
+        
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Experienced Technical Writer with expertise in AsciiDoc, GitHub, JIRA, and DITA. Passionate about creating user-friendly documentation that enhances product adoption.</p>
+            <a href="Tavleena_Resume.pdf" class="btn" download>Download Resume</a>
+        </div>
+        
+        <div class="section">
+            <h2>Portfolio</h2>
+            <div class="portfolio">
+                <div class="portfolio-item">
+                    <img src="doc1.jpg" alt="User Documentation">
+                    <p><a href="#">Installation Guide for XYZ Software</a></p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="doc2.jpg" alt="Technical Guide">
+                    <p><a href="#">API Documentation for DEF App</a></p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="doc3.jpg" alt="Content Strategy">
+                    <p><a href="#">Content Strategy for SaaS Product</a></p>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="section">
+            <h2>Contact</h2>
+            <a href="mailto:tavleenam@gmail.com" class="btn">Email Me</a>
+            <a href="https://linkedin.com/in/yourprofile" class="btn">LinkedIn</a>
+            <a href="https://github.com/tavzwriter" class="btn">GitHub</a>
+        </div>
+    </div>
+</body>
+</html>
