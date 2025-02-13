@@ -45,6 +45,23 @@
             padding: 10px;
             margin-top: 20px;
         }
+        .toc {
+            margin-bottom: 20px;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .toc ul li {
+            margin: 5px 0;
+        }
+        .toc a {
+            text-decoration: none;
+            color: #2C3E50;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -52,9 +69,21 @@
     <h1>Configuration Guide</h1>
     <h2>Chapter 2: Admin Tasks for TMExample Financoftware</h2>
 
+    <!-- Table of Contents -->
+    <div class="toc">
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#system-setup">1. System Setup</a></li>
+            <li><a href="#user-management">2. User Management</a></li>
+            <li><a href="#security-configuration">3. Security Configuration</a></li>
+            <li><a href="#backup-recovery">4. Backup and Recovery</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+    </div>
+
     <p>Welcome to Chapter 2 of the Configuration Guide for *TMExample Financoftware*. This chapter covers the essential admin tasks that you need to perform to properly configure the software. These administrative tasks ensure that your financial institution can run operations smoothly, securely, and in compliance with industry standards.</p>
 
-    <h2>1. System Setup</h2>
+    <h2 id="system-setup">1. System Setup</h2>
     <p>The first step in configuring *TMExample Financoftware* is setting up the system environment. This includes configuring network settings, database connections, and integrating with other internal systems.</p>
     
     <h3>Network Configuration</h3>
@@ -94,7 +123,7 @@
         </tbody>
     </table>
 
-    <h2>2. User Management</h2>
+    <h2 id="user-management">2. User Management</h2>
     <p>In *TMExample Financoftware*, user management is crucial for controlling access to the system. Admins can create, modify, and delete user accounts, as well as assign permissions.</p>
 
     <h3>Creating a New User</h3>
@@ -116,7 +145,7 @@
         <li>Click <strong>Save Changes</strong> to apply the new permissions.</li>
     </ol>
 
-    <h2>3. Security Configuration</h2>
+    <h2 id="security-configuration">3. Security Configuration</h2>
     <p>Security is a critical aspect of financial institution software. To ensure the safety of your system, follow these best practices:</p>
 
     <h3>Password Policies</h3>
@@ -136,7 +165,7 @@
         <li>Save your settings.</li>
     </ol>
 
-    <h2>4. Backup and Recovery</h2>
+    <h2 id="backup-recovery">4. Backup and Recovery</h2>
     <p>Having a backup and recovery plan is essential for preventing data loss in case of failure or disaster. Follow these guidelines for setting up backups:</p>
 
     <h3>Backup Schedule</h3>
@@ -159,7 +188,7 @@
         <strong>Note:</strong> Always verify your backup data regularly to ensure the recovery process will work seamlessly in the event of a failure.
     </div>
 
-    <h2>Conclusion</h2>
+    <h2 id="conclusion">Conclusion</h2>
     <p>Effective administration of *TMExample Financoftware* ensures that your financial institution operates smoothly, securely, and efficiently. By configuring the system properly, managing user access, implementing strong security protocols, and maintaining reliable backup and recovery processes, you can safeguard your data and provide a seamless user experience.</p>
 
 </body>
