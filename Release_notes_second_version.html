@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Release Notes for TMexample Software - Version 2.5.0</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { padding: 20px; background-color: #f8f9fa; display: flex; }
+        .sidebar {
+            width: 250px;
+            position: fixed;
+            height: 100%;
+            background-color: #343a40;
+            padding: 20px;
+            color: white;
+        }
+        .sidebar a { color: white; text-decoration: none; display: block; padding: 8px; margin-bottom: 5px; }
+        .sidebar a:hover { background-color: #495057; }
+        .content { margin-left: 270px; max-width: 900px; }
+        .table { margin-top: 20px; }
+        .alert { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h4>Table of Contents</h4>
+        <a href="#introduction">Introduction</a>
+        <a href="#bug-fixes">Bug Fixes</a>
+        <a href="#new-features">New Features</a>
+        <a href="#known-issues">Known Issues</a>
+    </div>
+
+    <div class="content">
+        <h1 class="text-primary text-center">Release Notes - TMexample Software Version 2.5.0</h1>
+
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>This document provides information on the latest release of TMexample Software Version 2.5.0, including bug fixes, newly added features, and known issues that users should be aware of.</p>
+        </section>
+
+        <section id="bug-fixes">
+            <h2>Bug Fixes</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Issue Key</th>
+                        <th>Component</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Previous Behavior</th>
+                        <th>Current Fix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>TME-101</td><td>Login Module</td><td>Users were unable to reset passwords</td><td>Resolved</td><td>Password reset emails failed to send</td><td>Email service reconfigured and tested successfully</td></tr>
+                    <tr><td>TME-102</td><td>Transaction API</td><td>Transaction timeout error</td><td>Resolved</td><td>Transactions failed after 30 seconds</td><td>Timeout extended to 60 seconds</td></tr>
+                    <tr><td>TME-103</td><td>Dashboard</td><td>Incorrect data displayed in the financial summary</td><td>Resolved</td><td>Financial summary showed outdated figures</td><td>Data source updated for real-time results</td></tr>
+                    <tr><td>TME-104</td><td>Reports</td><td>PDF export failed for large reports</td><td>Resolved</td><td>Exports crashed for reports over 50 pages</td><td>PDF library updated to support large files</td></tr>
+                    <tr><td>TME-105</td><td>Notifications</td><td>SMS alerts not delivered</td><td>Resolved</td><td>Users did not receive SMS transaction alerts</td><td>Third-party SMS provider integration fixed</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="new-features">
+            <h2>New Features</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Feature Key</th>
+                        <th>Component</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Impact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>TME-F01</td><td>Analytics Dashboard</td><td>Added new data visualization graphs</td><td>Implemented</td><td>Enhanced user experience for financial analysis</td></tr>
+                    <tr><td>TME-F02</td><td>Security</td><td>Two-Factor Authentication (2FA)</td><td>Implemented</td><td>Improved account security</td></tr>
+                    <tr><td>TME-F03</td><td>API</td><td>Added bulk transaction API endpoint</td><td>Implemented</td><td>Increased efficiency for large transaction processing</td></tr>
+                    <tr><td>TME-F04</td><td>User Settings</td><td>Customizable notifications</td><td>Implemented</td><td>Users can set preferences for SMS and email alerts</td></tr>
+                    <tr><td>TME-F05</td><td>Reports</td><td>CSV download option for reports</td><td>Implemented</td><td>Improved data export options</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="known-issues">
+            <h2>Known Issues</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Issue Key</th>
+                        <th>Component</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Workaround</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>TME-K01</td><td>Mobile App</td><td>Crash on Android 12 devices</td><td>Open</td><td>Use web portal until fix is released</td></tr>
+                    <tr><td>TME-K02</td><td>Notifications</td><td>Email alerts delayed during peak hours</td><td>Open</td><td>Check notifications within the dashboard</td></tr>
+                    <tr><td>TME-K03</td><td>Transaction API</td><td>Rate limit exceeded for bulk transactions</td><td>Open</td><td>Throttle API calls or split into batches</td></tr>
+                    <tr><td>TME-K04</td><td>User Settings</td><td>Notification preferences reset after logout</td><td>Open</td><td>Reconfigure settings after each login</td></tr>
+                    <tr><td>TME-K05</td><td>Reports</td><td>Chart rendering issues on Safari browser</td><td>Open</td><td>Use Chrome or Firefox as alternatives</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
