@@ -24,24 +24,6 @@
             line-height: 1.4;
             white-space: pre-wrap;
         }
-        .toc {
-            margin: 20px 0;
-            font-size: 16px;
-        }
-        .toc ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .toc li {
-            margin-bottom: 8px;
-        }
-        .toc a {
-            color: #2C3E50;
-            text-decoration: none;
-        }
-        .toc a:hover {
-            text-decoration: underline;
-        }
         table {
             width: 100%;
             margin: 20px 0;
@@ -69,26 +51,12 @@
 
     <h1>How to Convert a DITA File to an AsciiDoc (Adoc) File</h1>
 
-    <div class="toc">
-        <strong>Table of Contents:</strong>
-        <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#why-convert">Why Convert DITA to AsciiDoc?</a></li>
-            <li><a href="#conversion-methods">Conversion Methods</a></li>
-            <li><a href="#manual-conversion">Manual Conversion</a></li>
-            <li><a href="#automated-conversion">Automated Conversion Tools</a></li>
-            <li><a href="#best-practices">Best Practices</a></li>
-            <li><a href="#example">Example Conversion</a></li>
-            <li><a href="#conclusion">Conclusion</a></li>
-        </ul>
-    </div>
-
-    <h2 id="introduction">Introduction</h2>
+    <h2>Introduction</h2>
     <p>In technical writing, converting content from one format to another is a common task. Among the most widely used formats are DITA (Darwin Information Typing Architecture) and AsciiDoc. DITA is well-suited for large-scale, structured content creation and reuse, while AsciiDoc is valued for its simplicity, flexibility, and plain-text nature.</p>
 
     <p>Converting a DITA file into an AsciiDoc (Adoc) format can streamline workflows, simplify version control, and make the content more accessible for a wider range of tools. In this article, we will explore why you might want to convert DITA to AsciiDoc, the methods available for doing so, and best practices to ensure a smooth transition.</p>
 
-    <h2 id="why-convert">Why Convert DITA to AsciiDoc?</h2>
+    <h2>Why Convert DITA to AsciiDoc?</h2>
     <p>There are several compelling reasons for converting DITA files to AsciiDoc:</p>
     <ul>
         <li><strong>Simplicity:</strong> AsciiDoc is a plain-text markup language, making it easier to edit and manage compared to XML-based DITA files.</li>
@@ -97,10 +65,10 @@
         <li><strong>Reduced Complexity:</strong> If your documentation doesn’t require DITA's complex topic-based architecture, AsciiDoc offers a simpler alternative that still allows for efficient content creation.</li>
     </ul>
 
-    <h2 id="conversion-methods">Conversion Methods</h2>
+    <h2>Conversion Methods</h2>
     <p>Converting a DITA file to an AsciiDoc file can be done manually or through automated tools. The method you choose will depend on the complexity of your content, the volume of files, and the tools available to you.</p>
 
-    <h3 id="manual-conversion">Manual Conversion</h3>
+    <h3>Manual Conversion</h3>
     <p>For smaller documents or when only a few DITA files need to be converted, manual conversion may be the easiest approach. This involves copying the content from the DITA file and rewriting it in AsciiDoc format. Here's how you can manually convert a DITA file to AsciiDoc:</p>
     <ul>
         <li><strong>Step 1:</strong> Open the DITA file in a text editor and locate the key elements: title, sections, paragraphs, tables, lists, etc.</li>
@@ -115,7 +83,7 @@
     </ul>
     <p>This method is suitable for small-scale conversions but can be time-consuming for larger documents with numerous files.</p>
 
-    <h3 id="automated-conversion">Automated Conversion Tools</h3>
+    <h3>Automated Conversion Tools</h3>
     <p>For larger DITA projects or when many files need to be converted, automated tools can save significant time and effort. Several tools can convert DITA to AsciiDoc:</p>
 
     <table>
@@ -146,9 +114,44 @@
     </table>
     <p>These tools help automate the conversion process and ensure that the formatting remains consistent across large sets of files.</p>
 
-    <h2 id="best-practices">Best Practices</h2>
+    <h2>Best Practices</h2>
     <p>When converting DITA files to AsciiDoc, follow these best practices to ensure the conversion is smooth and maintains content integrity:</p>
     <ul>
         <li><strong>Use Consistent Templates:</strong> To keep the structure and formatting consistent, create a set of templates for AsciiDoc files that you can reuse across documents.</li>
         <li><strong>Automate Where Possible:</strong> If you have a large number of files, use automated tools like dita2adoc to reduce manual errors and save time.</li>
-        <li><strong>Quality Assurance:</strong> After converting your files, review them to ensure that elements like tables, figures, and lists have been correctly converted.</
+        <li><strong>Quality Assurance:</strong> After converting your files, review them to ensure that elements like tables, figures, and lists have been correctly converted.</li>
+        <li><strong>Use Version Control:</strong> AsciiDoc files are plain text, making them ideal for version control systems like Git. Track changes efficiently and collaborate seamlessly with others.</li>
+        <li><strong>Document the Process:</strong> Keep track of your conversion process to ensure that it’s repeatable, especially if you need to convert files regularly.</li>
+    </ul>
+
+    <h2>Example Conversion</h2>
+    <p>Let’s look at a basic example to understand how DITA content can be converted to AsciiDoc format:</p>
+
+    <pre>
+        <!-- DITA Content -->
+        <topic>
+            <title>Getting Started with DITA</title>
+            <p>This guide introduces you to the basics of DITA.</p>
+            <ul>
+                <li>What is DITA?</li>
+                <li>Why Use DITA?</li>
+            </ul>
+        </topic>
+
+        <!-- Converted AsciiDoc -->
+        = Getting Started with DITA
+        This guide introduces you to the basics of DITA.
+
+        * What is DITA?
+        * Why Use DITA?
+    </pre>
+
+    <h2>Conclusion</h2>
+    <p>Converting DITA to AsciiDoc can offer many benefits, especially if you're looking for a lightweight, easy-to-use format that integrates well into version control systems and continuous integration pipelines. While manual conversion works for small projects, automated tools are the best choice for larger-scale projects. Regardless of your chosen method, following best practices will help ensure a smooth, error-free conversion process.</p>
+
+    <div class="note">
+        <strong>Note:</strong> Always test the converted files to make sure the structure and formatting are correct. This will help avoid errors in the final documentation.
+    </div>
+
+</body>
+</html>
