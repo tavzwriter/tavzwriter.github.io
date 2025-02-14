@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD Pipeline for Automated Documentation Portal Deployment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            position: fixed;
+            height: 100%;
+            background-color: white;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+        .sidebar h4 {
+            color: #343a40;
+            font-size: 20px;
+        }
+        .sidebar a {
+            color: #007BFF;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+            background-color: #ffffff;
+            min-height: 100vh;
+        }
+        h1, h2, h3 {
+            color: #343a40;
+        }
+        .tip, .note {
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 6px solid;
+        }
+        .tip { background-color: #e7f3fe; border-color: #2196F3; }
+        .note { background-color: #fff3cd; border-color: #ffc107; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h4>Table of Contents</h4>
+        <a href="#introduction">Introduction</a>
+        <a href="#cicd-overview">CI/CD Overview</a>
+        <a href="#yml-workflows">YAML and GitHub Workflows</a>
+        <a href="#pipeline-structure">Pipeline Structure</a>
+        <a href="#automated-build">Automated Build & Deployment</a>
+        <a href="#best-practices">Best Practices</a>
+        <a href="#challenges">Challenges & Solutions</a>
+    </div>
+
+    <div class="content">
+        <h1>CI/CD Pipeline for Automated Documentation Portal Deployment</h1>
+
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Automating documentation portals is essential in modern software development. Leveraging CI/CD pipelines ensures that documentation is always up-to-date, reducing manual effort and deployment errors.</p>
+        </section>
+
+        <section id="cicd-overview">
+            <h2>CI/CD Overview</h2>
+            <ul>
+                <li><strong>Continuous Integration:</strong> Merging documentation changes frequently into the main branch.</li>
+                <li><strong>Continuous Deployment:</strong> Automatically publishing updates to the live documentation portal.</li>
+            </ul>
+        </section>
+
+        <section id="yml-workflows">
+            <h2>YAML and GitHub Workflows</h2>
+            <p>Workflows are configured in YAML files, defining steps for build and deployment. Example:</p>
+            <pre>
+name: Deploy Documentation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Build Documentation
+        run: ./build-docs.sh
+
+      - name: Deploy to Portal
+        run: ./deploy-docs.sh
+            </pre>
+        </section>
+
+        <section id="pipeline-structure">
+            <h2>Pipeline Structure</h2>
+            <table>
+                <tr><th>Step</th><th>Description</th></tr>
+                <tr><td>Trigger</td><td>Push to main branch</td></tr>
+                <tr><td>Build</td><td>Convert AsciiDoc/Markdown to HTML</td></tr>
+                <tr><td>Test</td><td>Validate output structure and links</td></tr>
+                <tr><td>Deploy</td><td>Sync content to the portal</td></tr>
+            </table>
+        </section>
+
+        <section id="automated-build">
+            <h2>Automated Build & Deployment</h2>
+            <ul>
+                <li>Markdown/AsciiDoc converted to HTML using automated scripts.</li>
+                <li>Artifacts deployed to GitHub Pages or internal servers.</li>
+            </ul>
+        </section>
+
+        <section id="best-practices">
+            <h2>Best Practices</h2>
+            <ul>
+                <li>Use version control (Git) for documentation.</li>
+                <li>Automate validation for broken links and syntax errors.</li>
+                <li>Keep pipeline scripts modular and reusable.</li>
+            </ul>
+        </section>
+
+        <section id="challenges">
+            <h2>Challenges & Solutions</h2>
+            <ul>
+                <li><strong>Challenge:</strong> YAML errors → <strong>Solution:</strong> Validate YAML syntax before pushing.</li>
+                <li><strong>Challenge:</strong> Broken links → <strong>Solution:</strong> Integrate link-checking tools.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
