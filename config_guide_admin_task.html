@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Configuration Guide – Admin Task</title>
+    <title>Configuration Guide: Admin Task Setup</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,49 +17,43 @@
             width: 250px;
             position: fixed;
             height: 100%;
-            background-color: #ffffff;
+            background-color: white;
             padding: 20px;
             border-right: 1px solid #ddd;
         }
         .sidebar h4 {
-            color: #333;
+            color: #343a40;
             font-size: 20px;
-            margin-bottom: 10px;
         }
         .sidebar a {
             color: #007BFF;
             text-decoration: none;
             display: block;
-            padding: 8px 0;
+            margin-bottom: 10px;
         }
         .sidebar a:hover {
             text-decoration: underline;
         }
-        .container {
+        .content {
             margin-left: 270px;
             padding: 20px;
+            background-color: #ffffff;
+            min-height: 100vh;
         }
-        .section {
-            background: white;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        h1, h2 {
+            color: #343a40;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
+        .tip {
+            background-color: #e7f3fe;
+            border-left: 6px solid #2196F3;
+            padding: 10px;
+            margin: 10px 0;
         }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
+        .note {
+            background-color: #fff3cd;
+            border-left: 6px solid #ffc107;
+            padding: 10px;
+            margin: 10px 0;
         }
     </style>
 </head>
@@ -67,66 +61,93 @@
     <div class="sidebar">
         <h4>Table of Contents</h4>
         <a href="#introduction">Introduction</a>
-        <a href="#steps">Configuration Steps</a>
-        <a href="#best-practices">Best Practices</a>
-        <a href="#troubleshooting">Troubleshooting</a>
+        <a href="#benefits">Key Benefits</a>
+        <a href="#prerequisites">Prerequisites</a>
+        <a href="#steps">Step-by-Step Setup</a>
+        <a href="#security">Security Best Practices</a>
+        <a href="#mistakes">Common Mistakes to Avoid</a>
+        <a href="#faq">FAQs</a>
+        <a href="#checklist">Checklist</a>
     </div>
+    <div class="content">
+        <h1>Configuration Guide: Admin Task Setup</h1>
 
-    <div class="container">
-        <div class="section" id="introduction">
+        <section id="introduction">
             <h2>Introduction</h2>
-            <p>This guide outlines the administrative tasks required to configure the system for optimal performance. Proper configuration ensures system stability, security, and efficiency.</p>
-        </div>
+            <p>Proper configuration of admin tasks is crucial for ensuring smooth operations, securing system access, and enabling administrators to manage resources effectively. This guide will walk you through the essential steps to configure administrative settings.</p>
+        </section>
 
-        <div class="section" id="steps">
-            <h2>Configuration Steps</h2>
+        <section id="benefits">
+            <h2>Key Benefits</h2>
             <ul>
-                <li>Log in to the admin console using your credentials.</li>
-                <li>Navigate to the System Settings page.</li>
-                <li>Update the necessary configuration fields based on your requirements.</li>
-                <li>Save the changes and restart the system if prompted.</li>
+                <li>Ensures smooth onboarding of administrators.</li>
+                <li>Reduces setup errors and potential system downtime.</li>
+                <li>Enhances security through proper user role assignments.</li>
+                <li>Streamlines access to critical administrative tools.</li>
             </ul>
-        </div>
+        </section>
 
-        <div class="section" id="best-practices">
-            <h2>Best Practices for Configuration</h2>
+        <section id="prerequisites">
+            <h2>Prerequisites</h2>
             <ul>
-                <li><strong>Document Your Changes:</strong> Maintain a log of all configuration updates to ensure traceability.</li>
-                <li><strong>Backup Configuration Files:</strong> Always create a backup before making any major adjustments.</li>
-                <li><strong>Test in a Sandbox:</strong> Test configurations in a development environment before deploying to production.</li>
-                <li><strong>Review Security Settings:</strong> Ensure only authorized users can modify configurations.</li>
+                <li><strong>Administrator Access:</strong> Ensure you have superuser credentials before beginning the setup.</li>
+                <li><strong>Network Configuration:</strong> Verify internet connectivity and firewall settings to prevent interruptions.</li>
+                <li><strong>System Requirements:</strong> Ensure the system meets the minimum hardware and software specifications.</li>
             </ul>
-        </div>
+        </section>
 
-        <div class="section" id="troubleshooting">
-            <h2>Common Configuration Errors & Solutions</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Error</th>
-                        <th>Cause</th>
-                        <th>Solution</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Configuration Not Saving</td>
-                        <td>Insufficient permissions</td>
-                        <td>Ensure the user has admin rights</td>
-                    </tr>
-                    <tr>
-                        <td>System Failure After Update</td>
-                        <td>Invalid configuration values</td>
-                        <td>Revert to the backup file and review changes</td>
-                    </tr>
-                    <tr>
-                        <td>Settings Not Applied</td>
-                        <td>System restart required</td>
-                        <td>Restart the system after saving changes</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <section id="steps">
+            <h2>Step-by-Step Setup</h2>
+            <h3>Accessing the Admin Panel</h3>
+            <ul>
+                <li>Navigate to the login page at <a href="#">[example link]</a>.</li>
+                <li>Enter your admin credentials and click ‘Login.’</li>
+            </ul>
+
+            <h3>Setting Up User Roles</h3>
+            <ul>
+                <li>Go to ‘User Management.’</li>
+                <li>Click ‘Add New Role’ and assign appropriate permissions.</li>
+            </ul>
+
+            <div class="tip">Tip: Always create a backup before making configuration changes.</div>
+            <div class="note">Note: Assign minimum necessary permissions to maintain security.</div>
+        </section>
+
+        <section id="security">
+            <h2>Security Best Practices</h2>
+            <ul>
+                <li>Regular password updates.</li>
+                <li>Using role-based access control.</li>
+                <li>Enabling audit logs.</li>
+            </ul>
+        </section>
+
+        <section id="mistakes">
+            <h2>Common Mistakes to Avoid</h2>
+            <ul>
+                <li><strong>Mistake:</strong> Assigning admin rights to all users → <strong>Solution:</strong> Use role-based permissions.</li>
+                <li><strong>Mistake:</strong> Not setting up password policies → <strong>Solution:</strong> Enforce strong passwords.</li>
+            </ul>
+        </section>
+
+        <section id="faq">
+            <h2>FAQs</h2>
+            <ul>
+                <li><strong>Q:</strong> What if I forget my admin password?</li>
+                <li><strong>Q:</strong> How can I revoke admin access for a user?</li>
+            </ul>
+        </section>
+
+        <section id="checklist">
+            <h2>Checklist</h2>
+            <ul>
+                <li>✅ Admin account created.</li>
+                <li>✅ User roles assigned.</li>
+                <li>✅ Permissions verified.</li>
+                <li>✅ Security settings configured.</li>
+            </ul>
+        </section>
     </div>
 </body>
 </html>
