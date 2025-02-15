@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tavleena Marwah | Technical Writer Portfolio</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: white; color: #333; display: flex; }
+        .sidebar { width: 250px; position: fixed; height: 100%; background-color: white; padding: 20px; color: white; top: 0; left: 0; z-index: 100; }
+        .sidebar h4 { color: white; font-size: 22px; margin-bottom: 20px; }
+        .sidebar a { color: white; text-decoration: none; display: block; padding: 8px; margin-bottom: 5px; }
+        .sidebar a:hover { background-color: #495057; }
+        .container { margin-left: 270px; width: 80%; padding: 20px; text-align: center; }
+        header { background: #007BFF; color: white; padding: 40px; font-size: 24px; font-weight: bold; }
+        .profile-pic { width: 150px; height: 150px; border-radius: 50%; border: 3px solid #fff; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); margin: 20px auto; }
+        .section { background: white; padding: 20px; margin: 20px 0; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
+        .btn { display: inline-block; padding: 10px 20px; margin: 10px; text-decoration: none; border-radius: 5px; font-weight: bold; color: white; background: #007BFF; }
+        .btn:hover { background: #0056b3; }
+        .sticky-header { position: sticky; top: 0; background-color: #000; padding: 10px; color: white; font-size: 18px; }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h4 class="sticky-header">Table of Contents</h4>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="container">
+        <header>
+            Tavleena Marwah | Technical Writer & Ex-Content Manager
+        </header>
+
+        <img src="profile.jpeg" alt="Tavleena Marwah" class="profile-pic">
+
+        <div class="section" id="about">
+            <h2>About Me</h2>
+            <!-- About me content here -->
+        </div>
+
+        <div class="section" id="portfolio">
+            <h2>Portfolio</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+                <thead>
+                    <tr style="background-color: #007BFF; color: white;">
+                        <th style="padding: 10px; text-align: left;">Title</th>
+                        <th style="padding: 10px; text-align: left;">Preview</th>
+                        <th style="padding: 10px; text-align: left;">Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 1px solid #ddd;"><td>Bridging the Knowledge Gap: The Role of Technical Writing</td><td><img src="bridge_the_gap.jpg" style="height: 50px;"></td><td><a href="Bridging_the_Knowledge_Gap.html">View</a></td></tr>
+                    <tr style="border-bottom: 1px solid #ddd;"><td>Sample Release Notes</td><td><img src="release_notes_new.png" style="height: 50px;"></td><td><a href="TMexample_Release_notes.html">View</a></td></tr>
+                    <tr style="border-bottom: 1px solid #ddd;"><td>Release Notes Second Version</td><td><img src="release_notes_new.png" style="height: 50px;"></td><td><a href="Release_notes_second_version.html">View</a></td></tr>
+                    <tr style="border-bottom: 1px solid #ddd;"><td>How to Convert Documentation from DITA to AsciiDoc</td><td><img src="convert_icon.jpeg" style="height: 50px;"></td><td><a href="Converting_Documentation_from_DITA_to_AsciiDoc.html">View</a></td></tr>
+                    <tr style="border-bottom: 1px solid #ddd;"><td>How to Add Equations in MS-Word and Reuse LaTeX</td><td><img src="icon.png" style="height: 50px;"></td><td><a href="add_equations_in_word.html">View</a></td></tr>
+                    <tr style="border-bottom: 1px solid #ddd;"><td>API Documentation for TMExample Product</td><td><img src="icon.png" style="height: 50px;"></td><td><a href="api_doc_tmexample_demo.html">View</a></td></tr>
+                    <tr style="border-bottom: 1px solid #ddd;"><td>PDF Output vs Online Guide</td><td><img src="pdftowebhelp.webp" style="height: 50px;"></td><td><a href="pdf_vs_doc_portal.html">View</a></td></tr>
+                    <tr style="border-bottom: 1px solid #ddd;"><td>Configuration Guide</td><td><img src="config_guide.jpg" style="height: 50px;"></td><td><a href="config_guide_admin_task.html">View</a></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section" id="contact">
+            <h2>Contact</h2>
+            <a href="mailto:tavz.writer@gmail.com" class="btn">Email Me</a>
+            <a href="https://www.linkedin.com/in/tavleena-marwah-5603592/" class="btn">LinkedIn</a>
+            <a href="https://github.com/tavzwriter" class="btn">GitHub</a>
+        </div>
+    </div>
+</body>
+</html>
