@@ -13,10 +13,8 @@
         header { background-color: #007BFF; color: white; padding: 20px; text-align: center; }
         .profile-pic { width: 150px; height: 150px; border-radius: 50%; margin-top: 10px; }
         .section { margin: 40px 0; }
-        .portfolio-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        .portfolio-table th, .portfolio-table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
-        .portfolio-table th { background-color: #f2f2f2; }
-        .portfolio-item img { width: 50px; height: 50px; object-fit: cover; border-radius: 5px; }
+        .portfolio-list { margin-top: 20px; }
+        .portfolio-list li { margin-bottom: 10px; }
         .btn { background-color: #007BFF; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin: 5px; }
         .btn:hover { background-color: #0056b3; }
         .btn-container { text-align: center; margin-top: 20px; }
@@ -63,27 +61,18 @@
         </div>
         <div class="section" id="portfolio">
             <h2>Portfolio</h2>
-            <table class="portfolio-table">
-                <thead>
-                    <tr>
-                        <th>Preview</th>
-                        <th>Title</th>
-                        <th>Link</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td><img src="bridge_the_gap.jpg" alt=""></td><td>Bridging the Knowledge Gap</td><td><a href="Bridging_the_Knowledge_Gap.html">View Document</a></td></tr>
-                    <tr><td><img src="release_notes_new.png" alt=""></td><td>Sample Release Notes</td><td><a href="TMexample_Release_notes.html">View Document</a></td></tr>
-                    <tr><td><img src="release_notes_new.png" alt=""></td><td>Release Notes Second Version</td><td><a href="Release_notes_second_version.html">View Document</a></td></tr>
-                    <tr><td><img src="convert_icon.jpeg" alt=""></td><td>Converting DITA to AsciiDoc</td><td><a href="Converting_Documentation_from_DITA_to_AsciiDoc.html">View Document</a></td></tr>
-                    <tr><td><img src="icon.png" alt=""></td><td>Adding Equations in MS-Word</td><td><a href="add_equations_in_word.html">View Document</a></td></tr>
-                    <tr><td><img src="icon.png" alt=""></td><td>API Documentation - TMExample</td><td><a href="api_doc_tmexample_demo.html">View Document</a></td></tr>
-                    <tr><td><img src="pdftowebhelp.webp" alt=""></td><td>Convert DITA to AsciiDoc</td><td><a href="convert_dita_to_adoc.html">View Document</a></td></tr>
-                    <tr><td><img src="pdftowebhelp.webp" alt=""></td><td>PDF vs Documentation Portal</td><td><a href="pdf_vs_doc_portal.html">View Document</a></td></tr>
-                    <tr><td><img src="config_guide.jpg" alt=""></td><td>Configuration Guide</td><td><a href="config_guide_admin_task.html">View Document</a></td></tr>
-                    <tr><td><img src="config_guide.jpg" alt=""></td><td>CI/CD Pipeline - Documentation Portal</td><td><a href="cicd_doc_portal.html">View Document</a></td></tr>
-                </tbody>
-            </table>
+            <ul class="portfolio-list">
+                <li><a href="Bridging_the_Knowledge_Gap.html">Bridging the Knowledge Gap</a></li>
+                <li><a href="TMexample_Release_notes.html">Sample Release Notes</a></li>
+                <li><a href="Release_notes_second_version.html">Release Notes Second Version</a></li>
+                <li><a href="Converting_Documentation_from_DITA_to_AsciiDoc.html">Converting DITA to AsciiDoc</a></li>
+                <li><a href="add_equations_in_word.html">Adding Equations in MS-Word</a></li>
+                <li><a href="api_doc_tmexample_demo.html">API Documentation - TMExample</a></li>
+                <li><a href="convert_dita_to_adoc.html">Convert DITA to AsciiDoc</a></li>
+                <li><a href="pdf_vs_doc_portal.html">PDF vs Documentation Portal</a></li>
+                <li><a href="config_guide_admin_task.html">Configuration Guide</a></li>
+                <li><a href="cicd_doc_portal.html">CI/CD Pipeline - Documentation Portal</a></li>
+            </ul>
         </div>
         <div class="section" id="contact">
             <h2>Contact</h2>
