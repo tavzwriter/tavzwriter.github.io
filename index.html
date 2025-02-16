@@ -1,160 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tavleena Marwah | Technical Writer Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: white;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-        }
-        header {
-            background: #007BFF;
-            color: white;
-            padding: 40px;
-            font-size: 24px;
-            font-weight: bold;
-            text-align: center;
-        }
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 3px solid #fff;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-            display: block;
-            margin: 20px auto;
-        }
-        .section {
-            background: white;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            color: white;
-            background: #007BFF;
-        }
-        .btn:hover {
-            background: #0056b3;
-        }
-        .portfolio-table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .portfolio-table th, .portfolio-table td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-            vertical-align: middle;
-        }
-        .portfolio-table th {
-            background-color: #f2f2f2;
-        }
-        .portfolio-img {
-            width: 50px;
-            height: auto;
-        }
-        .portfolio-link {
-            text-decoration: none;
-            color: #007BFF;
-        }
-        .portfolio-link:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            Tavleena Marwah | Technical Writer & Ex-Content Manager
-        </header>
+import React from 'react';
 
-        <img src="profile.jpeg" alt="Tavleena Marwah" class="profile-pic">
+const Portfolio = () => {
+  const portfolioItems = [
+    {
+      title: 'Bridging the Knowledge Gap: The Role of Technical Writing',
+      image: 'bridge_the_gap.jpg',
+      link: 'Bridging_the_Knowledge_Gap.html',
+    },
+    {
+      title: 'Sample Release Notes',
+      image: 'release_notes_new.png',
+      link: 'TMexample_Release_notes.html',
+    },
+    {
+      title: 'Release Notes Second Version',
+      image: 'release_notes_new.png',
+      link: 'Release_notes_second_version.html',
+    },
+    {
+      title: 'How to Convert Documentation from DITA to AsciiDoc',
+      image: 'convert_icon.jpeg',
+      link: 'Converting_Documentation_from_DITA_to_AsciiDoc.html',
+    },
+    {
+      title: 'How to Add Equations in MS-Word and Reuse LaTeX',
+      image: 'icon.png',
+      link: 'add_equations_in_word.html',
+    },
+    {
+      title: 'API Documentation for TMExample Product',
+      image: 'icon.png',
+      link: 'api_doc_tmexample_demo.html',
+    },
+    {
+      title: 'How to Convert a DITA File to an AsciiDoc (Adoc) File',
+      image: 'pdftowebhelp.webp',
+      link: 'convert_dita_to_adoc.html',
+    },
+    {
+      title: 'Online PDF vs Documentation Portal',
+      image: 'pdftowebhelp.webp',
+      link: 'pdf_vs_doc_portal.html',
+    },
+    {
+      title: 'Configuration Guide',
+      image: 'config_guide.jpg',
+      link: 'config_guide_admin_task.html',
+    },
+    {
+      title: 'CI/CD Pipeline for Automated Documentation Portal Deployment',
+      image: 'config_guide.jpg',
+      link: 'cicd_doc_portal.html',
+    },
+  ];
 
-        <div class="section" id="about">
-            <h2>About Me</h2>
-            <p>I am a seasoned <strong>Technical Writer</strong> and <strong>Content Manager</strong> with <strong>over 15 years of experience</strong> in creating clear, concise, and user-focused documentation for complex software products. My work bridges the gap between product teams and end users, ensuring smooth product adoption and reducing support costs.</p>
-            <p><strong>My expertise</strong> lies in developing and managing a diverse range of content, including:</p>
-            <ul>
-                <li>User Manuals and Installation Guides</li>
-                <li>Release Notes and Technical Specifications</li>
-                <li>Online Help Systems and Knowledge Bases</li>
-                <li>Troubleshooting Documentation and Process Workflows</li>
-            </ul>
-            <p><strong>Tools & Methodologies:</strong></p>
-            <ul>
-                <li>AsciiDoc, DITA, Markdown for structured authoring</li>
-                <li>GitHub, JIRA, Confluence for content collaboration and version control</li>
-            </ul>
-            <p><strong>Key Achievements:</strong></p>
-            <ul>
-                <li>Led content migrations from legacy formats to modern platforms like AsciiDoc and DITA</li>
-                <li>Optimized documentation workflows by implementing automation and reusable content modules</li>
-                <li>Enhanced accessibility by structuring content for diverse user groups across industries</li>
-                <li>Collaborated closely with SMEs, developers, and QA teams to ensure accurate and up-to-date documentation</li>
-            </ul>
-            <p><strong>My Passion:</strong> Transforming complex technical information into engaging, easy-to-understand content. I believe that great documentation is as important as the product itself, empowering users and driving business success.</p>
-            <a href="Tavleena_Marwah.pdf" class="btn" download>Download Resume</a>
+  return (
+    <section id="portfolio" className="py-12 bg-gray-100">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-8">Portfolio</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {portfolioItems.map((item, index) => (
+            <div key={index} className="bg-white rounded-lg shadow-md p-4 text-center">
+              <img src={item.image} alt={item.title} className="mx-auto mb-4 h-24 object-cover" />
+              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+              <a href={item.link} className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+          ))}
         </div>
+      </div>
+    </section>
+  );
+};
 
-        <div class="section" id="portfolio">
-            <h2>Portfolio</h2>
-            <table class="portfolio-table">
-                <thead>
-                    <tr>
-                        <th>Image</th>
-                        <th>Title</th>
-                        <th>Link</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="bridge_the_gap.jpg" class="portfolio-img" alt="bridge_the_gap"></td>
-                        <td>Bridging the Knowledge Gap: The Role of Technical Writing</td>
-                        <td><a href="Bridging_the_Knowledge_Gap.html" class="portfolio-link">View Article</a></td>
-                    </tr>
-                    <tr>
-                        <td><img src="release_notes_new.png" class="portfolio-img" alt="Release Notes"></td>
-                        <td>Sample Release Notes</td>
-                        <td><a href="TMexample_Release_notes.html" class="portfolio-link">View Article</a></td>
-                    </tr>
-                    <tr>
-                        <td><img src="release_notes_new.png" class="portfolio-img" alt="Release Notes"></td>
-                        <td>Release Notes Second Version</td>
-                        <td><a href="Release_notes_second_version.html" class="portfolio-link">View Article</a></td>
-                    </tr>
-                    <tr>
-                        <td><img src="convert_icon.jpeg" class="portfolio-img" alt="Conversion"></td>
-                        <td>How to Convert Documentation from DITA to AsciiDoc</td>
-                        <td><a href="Converting_Documentation_from_DITA_to_AsciiDoc.html" class="portfolio-link">View Article</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="section" id="contact">
-            <h2>Contact</h2>
-            <a href="mailto:tavz.writer@gmail.com" class="btn">Email Me</a>
-            <a href="https://www.linkedin.com/in/tavleena-marwah-5603592/" class="btn">LinkedIn</a>
-            <a href="https://github.com/tavzwriter" class="btn">GitHub</a>
-        </div>
-    </div>
-</body>
-</html>
+export default Portfolio;
