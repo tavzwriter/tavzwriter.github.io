@@ -9,9 +9,25 @@
             font-family: Arial, sans-serif;
             margin: 20px;
             line-height: 1.6;
+            display: flex;
+        }
+        .content {
+            width: 75%;
+            padding-right: 20px;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            position: sticky;
+            top: 20px;
         }
         h1, h2 {
             color: #2C3E50;
+        }
+        h2 {
+            color: #2980B9;
         }
         p {
             margin-bottom: 10px;
@@ -31,65 +47,95 @@
             padding: 5px;
             border-radius: 3px;
         }
+        .toc ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .toc li {
+            margin: 10px 0;
+        }
+        .toc a {
+            text-decoration: none;
+            color: #2980B9;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
-    <h1>How to Add Equations in MS-Word and Reuse LaTeX</h1>
+    <div class="sidebar">
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#step1">Step 1: Inserting Equations in MS-Word</a></li>
+                <li><a href="#step2">Step 2: Reusing LaTeX in MS-Word</a></li>
+                <li><a href="#latex-examples">5 Example LaTeX Equations</a></li>
+                <li><a href="#step3">Step 3: Formatting Equations</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+            </ul>
+        </div>
+    </div>
 
-    <p>Microsoft Word provides an easy way to add equations in your documents using its built-in equation editor. Additionally, you can reuse LaTeX code in Word’s equation editor. This article walks you through the process of adding equations in MS Word and how you can reuse LaTeX to simplify your workflow.</p>
+    <div class="content">
+        <h1>How to Add Equations in MS-Word and Reuse LaTeX</h1>
 
-    <h2>Step 1: Inserting Equations in MS-Word</h2>
+        <p>Microsoft Word provides an easy way to add equations in your documents using its built-in equation editor. Additionally, you can reuse LaTeX code in Word’s equation editor. This article walks you through the process of adding equations in MS Word and how you can reuse LaTeX to simplify your workflow.</p>
 
-    <p>To insert an equation in MS Word, follow these steps:</p>
-    <ul>
-        <li>Click on the "Insert" tab in the ribbon.</li>
-        <li>Click on "Equation" (you can also press <kbd>Alt</kbd> + <kbd>=</kbd>).</li>
-        <li>A placeholder for the equation will appear, where you can enter your equation.</li>
-    </ul>
+        <h2 id="step1">Step 1: Inserting Equations in MS-Word</h2>
 
-    <h2>Step 2: Reusing LaTeX in MS-Word</h2>
+        <p>To insert an equation in MS Word, follow these steps:</p>
+        <ul>
+            <li>Click on the "Insert" tab in the ribbon.</li>
+            <li>Click on "Equation" (you can also press <kbd>Alt</kbd> + <kbd>=</kbd>).</li>
+            <li>A placeholder for the equation will appear, where you can enter your equation.</li>
+        </ul>
 
-    <p>If you already have LaTeX code for an equation and want to reuse it in Word, you can do so with the equation editor:</p>
-    <ul>
-        <li>Click on the "Insert" tab and select "Equation".</li>
-        <li>Click on the "Equation Tools" dropdown and choose "LaTeX".</li>
-        <li>Paste your LaTeX code into the equation editor, and Word will convert it into a formatted equation.</li>
-    </ul>
+        <h2 id="step2">Step 2: Reusing LaTeX in MS-Word</h2>
 
-    <h2>5 Example LaTeX Equations</h2>
-    <p>Here are 5 example equations written in LaTeX format:</p>
+        <p>If you already have LaTeX code for an equation and want to reuse it in Word, you can do so with the equation editor:</p>
+        <ul>
+            <li>Click on the "Insert" tab and select "Equation".</li>
+            <li>Click on the "Equation Tools" dropdown and choose "LaTeX".</li>
+            <li>Paste your LaTeX code into the equation editor, and Word will convert it into a formatted equation.</li>
+        </ul>
 
-    <p><strong>1. Quadratic Equation:</strong></p>
-    <pre class="latex">
-        x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
-    </pre>
+        <h2 id="latex-examples">5 Example LaTeX Equations</h2>
+        <p>Here are 5 example equations written in LaTeX format:</p>
 
-    <p><strong>2. Pythagorean Theorem:</strong></p>
-    <pre class="latex">
-        c^2 = a^2 + b^2
-    </pre>
+        <p><strong>1. Quadratic Equation:</strong></p>
+        <pre class="latex">
+            x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+        </pre>
 
-    <p><strong>3. Euler's Formula:</strong></p>
-    <pre class="latex">
-        e^{i\pi} + 1 = 0
-    </pre>
+        <p><strong>2. Pythagorean Theorem:</strong></p>
+        <pre class="latex">
+            c^2 = a^2 + b^2
+        </pre>
 
-    <p><strong>4. Integral of a Function:</strong></p>
-    <pre class="latex">
-        \int_{a}^{b} f(x) \, dx
-    </pre>
+        <p><strong>3. Euler's Formula:</strong></p>
+        <pre class="latex">
+            e^{i\pi} + 1 = 0
+        </pre>
 
-    <p><strong>5. Summation Formula:</strong></p>
-    <pre class="latex">
-        \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
-    </pre>
+        <p><strong>4. Integral of a Function:</strong></p>
+        <pre class="latex">
+            \int_{a}^{b} f(x) \, dx
+        </pre>
 
-    <h2>Step 3: Formatting Equations</h2>
-    <p>Once you insert an equation in MS Word, you can format it like any other text. You can adjust the size, font, and positioning of the equation within your document.</p>
+        <p><strong>5. Summation Formula:</strong></p>
+        <pre class="latex">
+            \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
+        </pre>
 
-    <h2>Conclusion</h2>
-    <p>MS Word’s equation editor makes it easy to insert and format equations in your documents. By reusing LaTeX code, you can streamline the process and maintain consistency in your equations. Whether you're working with complex mathematical formulas or simple arithmetic, MS Word’s equation tools are a powerful resource for any writer, researcher, or student.</p>
+        <h2 id="step3">Step 3: Formatting Equations</h2>
+        <p>Once you insert an equation in MS Word, you can format it like any other text. You can adjust the size, font, and positioning of the equation within your document.</p>
+
+        <h2 id="conclusion">Conclusion</h2>
+        <p>MS Word’s equation editor makes it easy to insert and format equations in your documents. By reusing LaTeX code, you can streamline the process and maintain consistency in your equations. Whether you're working with complex mathematical formulas or simple arithmetic, MS Word’s equation tools are a powerful resource for any writer, researcher, or student.</p>
+
+    </div>
 
 </body>
 </html>
