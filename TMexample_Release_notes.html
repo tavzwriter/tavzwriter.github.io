@@ -4,38 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TmExample - Release Notes (v3.5.0)</title>
+   
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
+        body { padding: 20px; background-color: #f8f9fa; display: flex; }
+        .sidebar {
+            width: 250px;
+            position: fixed;
+            height: 100%;
+            background-color: #343a40;
             padding: 20px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-        }
-        th, td {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #007BFF;
             color: white;
         }
-        .section-title {
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-top: 20px;
-            color: #007BFF;
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 8px;
+            margin-bottom: 5px;
         }
+        .sidebar a:hover { background-color: #495057; }
+        .content { margin-left: 270px; max-width: 900px; }
+        .table { margin-top: 20px; }
+        .alert { margin-top: 20px; }
     </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h4>Table of Contents</h4>
+        <a href="#New features">New features</a>
+        <a href="#Bug Fixes">Bug Fixes</a>
+        <a href="#Known Issues">Known Issues</a>
+        <a href="#Downlaod & Installation">Downlaod & Installation</a>
+        <a href="#Support & Feedback">Support & Feedback</a>
+    </div>
 </head>
 <body>
 
