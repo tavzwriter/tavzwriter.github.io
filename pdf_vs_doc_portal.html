@@ -12,7 +12,7 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
-            display: flex;
+            display: block; /* Change from flex to block */
         }
         .sidebar {
             width: 250px;
@@ -38,9 +38,10 @@
             background-color: #495057;
         }
         .container {
-            margin-left: 270px;
-            width: 80%;
+            margin-left: 270px; /* Space for sidebar */
+            width: calc(100% - 270px); /* Take up remaining space */
             padding: 20px;
+            box-sizing: border-box; /* Include padding in the width calculation */
         }
         header {
             background: #007BFF;
@@ -50,8 +51,6 @@
             font-weight: bold;
         }
         .content {
-            margin-left: 270px;
-            width: 80%;
             padding: 20px;
         }
         h1, h2 {
